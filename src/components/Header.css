@@ -1,0 +1,87 @@
+.HeaderBannerAndIcons-divIcons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 100px 20px;
+}
+.HeaderBannerAndIcons-imgBanner{
+    width: calc(100vw - 40px);
+    padding: 0 20px;
+    max-width: 500px;
+}
+.HeaderBannerAndIcons-iIcon{
+    font-size: 25px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    color: #272727;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.HeaderBannerAndIcons-iIcon:hover{
+    color: #707070;
+}
+.HeaderBannerAndIcons-iIcon:hover>.HeaderBannerAndIcons-pMessage{
+    opacity: 1;
+}
+.HeaderBannerAndIcons-pMessage{
+    position: relative;
+    background-color: gray;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: 1s;
+    top: -70px;
+}
+/* HeaderNav */
+.HeaderNav-ulMap{
+    background-color: #141414;
+    position: fixed;
+    z-index: 100;
+    left: -320px;
+    overflow: auto;
+    top: 0px;
+    width: 320px;
+    height: 100vh;
+    margin: 0;
+    transition-duration: 1s;
+    padding: 0;
+}
+.HeaderNav-ulMap--active{
+    left: 0px;
+}
+.HeaderNav-liEl:nth-of-type(1){
+    margin-top: 50px;
+}
+.HeaderNav-liEl{
+    margin: 10px 50px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.142);
+}
+.HeaderNav::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width:100vw;
+    min-height: 100vh;
+    top: 0;
+    z-index: 90;
+    background-color: rgba(34, 34, 34, 0.402);
+}
+.HeaderNav-liEl:hover{
+    color: gray;
+}
