@@ -1,4 +1,5 @@
 import './App.css';
+import './components/Main.css'
 import { Outlet } from 'react-router';
 import { HeaderBannerAndIcons } from './components/HeaderBannerAndIcons';
 

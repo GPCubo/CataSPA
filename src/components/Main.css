@@ -1,0 +1,106 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.MainCurso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    padding: 20px;
+}
+.MainCurso-divMap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    min-height: 300px;
+}
+.MainCurso-imgMockUp{
+    width: 300px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.MainCurso-pTitle{
+    text-decoration: none;
+    color: #272727;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.MainCurso-pType{
+    padding: 10px 0;
+    margin: 0;
+    opacity: 0.8;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    border-top: 1px solid #3d3d3d30;
+    border-bottom: 1px solid #3d3d3d50;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.107);
+}
+.MainCurso-linkBlock{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+/* CATEGORY */
+.Category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Category-pTitle{
+    width: 50vw;
+    min-width: 250px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #3d3d3d50;
+    box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 11%);
+    margin-bottom: 50px;
+}
+/* Product */
+.Product{
+    width: 50vw;
+    min-width: 300px;
+    max-width: 1440px;
+}
+.product-imgProduct{
+    width: 100%;
+}
+.product-divLinks{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+}
+.product-pDev{
+    width: 40%;
+    padding: 5px 15px;
+    text-decoration: none;
+    letter-spacing: .5px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    min-width: 200px;
+    background-color:#f04e23;
+}
+.MainCurso-imgMockUp:hover{
+    opacity: 0.7;
+}
+.MainCurso-linkBlock:hover{
+    color: #135c6d;
+}
+.MainCurso-pTitle:hover{
+    color:#f04e23
+}

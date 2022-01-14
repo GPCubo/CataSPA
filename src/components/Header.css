@@ -58,10 +58,13 @@
 .HeaderNav-ulMap--active{
     left: 0px;
 }
-.HeaderNav-liEl:nth-of-type(1){
-    margin-top: 50px;
+.HeaderNav-linkCategory{
+    text-decoration: none;
+    color: white;
 }
 .HeaderNav-liEl{
+    display: flex;
+    flex-direction: column;
     margin: 10px 50px;
     color: white;
     font-size: 14px;
@@ -72,16 +75,42 @@
     list-style: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.142);
 }
+.HeaderNav-h1SeeProducts{
+    color:  white;
+    margin: 40px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.HeaderNav-imgProduct{
+    width: -webkit-fill-available;
+}
+.HeaderNav-LinkTitle{
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.HeaderNav-pDate{
+    text-align: center;
+}
+.HeaderNav-spanPublicado{
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.614);
+}
+.HeaderNav-liEl:nth-of-type(1){
+    margin-top: 50px;
+}
 .HeaderNav::after{
     content: "";
-    position: absolute;
+    position: fixed;
     left: 0;
-    width:100vw;
+    width:calc(100vw - 17px);
     min-height: 100vh;
     top: 0;
     z-index: 90;
     background-color: rgba(34, 34, 34, 0.402);
 }
-.HeaderNav-liEl:hover{
+.HeaderNav-linkCategory:hover{
     color: gray;
 }
