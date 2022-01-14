@@ -4,16 +4,14 @@ import { HeaderNav } from './HeaderNav';
 import {db} from  '../firebase/Crendenciales'
 import {collection, query, getDocs,limit,orderBy} from "firebase/firestore";
 
-
 export const HeaderBannerAndIcons = () => {
     const [data, setData] = useState(null);
     const [toggleNav, settoggleNav] = useState(false);
     const handleNav = (e) =>{
         switch (e.target.classList[1]) {
             case "fa-bars":
-                settoggleNav([true,e.target.classList[1]])
-                break;
             case "fa-cog":
+            case "fa-search":
                 settoggleNav([true,e.target.classList[1]])
                 break;
             default:
@@ -53,7 +51,7 @@ export const HeaderBannerAndIcons = () => {
           data &&
           <i className="fas fa-cog HeaderBannerAndIcons-iIcon"  onClick={handleNav}><p className='HeaderBannerAndIcons-pMessage'>Recientes</p></i>
           }
-          <i className="fas fa-search HeaderBannerAndIcons-iIcon"><p className='HeaderBannerAndIcons-pMessage'>Buscar</p></i>
+          <i className="fas fa-search HeaderBannerAndIcons-iIcon" onClick={handleNav}><p className='HeaderBannerAndIcons-pMessage'>Buscar</p></i>
         </div>
         </>
     )

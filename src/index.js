@@ -6,6 +6,7 @@ import {LandingPage} from './views/LandingPage'
 import {HashRouter,Routes,Route} from "react-router-dom";
 import { Category } from './views/Category';
 import { Product } from './views/Product';
+import { Search } from './views/Search';
 
 ReactDOM.render(
 
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route index element={<LandingPage/>}/>
         <Route path="category/:collection" element={<Category/>}/>
         <Route path="product/:_idT" element={<Product/>}/>
+        <Route path="search/:value" element={<Search/>}/>
       </Route>
     </Routes>
   </HashRouter>,

@@ -24,7 +24,6 @@ export const Category = () => {
                 dataFromDb.push(setData)
             })
             if(dataFromDb.length === 0)throw new Error("No hay datos disponibles")
-            console.log(dataFromDb)
             setLoading(false)
             setData(dataFromDb)
         })
