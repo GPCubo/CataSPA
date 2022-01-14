@@ -5,8 +5,8 @@ export const HeaderNav = ({typeRender, handleTakeOffNav,data}) => {
     const [search, setSearch] = useState(null);
     useEffect(() => {
         if(!typeRender)return
-        if(typeRender[1] === "fa-bars"||typeRender[1] === "fa-cog") document.getElementsByClassName(`HeaderNav-ulMap${typeRender[1]}`)[0].classList.add("HeaderNav-ulMap--active");
-        // if(typeRender[1] === "fa-search") document.getElementsByClassName(`HeaderNav-div${typeRender[1]}`)[0].classList.add("HeaderNav-div--active")
+        if(typeRender[1] === "fa-bars"||typeRender[1] === "fa-cog") {document.getElementsByClassName(`HeaderNav-ulMap${typeRender[1]}`)[0].classList.add("HeaderNav-ulMap--active");return}
+        if(typeRender[1] === "fa-search") document.getElementsByClassName(`HeaderNav-div${typeRender[1]}`)[0].classList.add("HeaderNav-div--active")
     }, [typeRender]);
     useEffect(() => {
         if(!search)return

@@ -57,10 +57,15 @@
 }
 .HeaderNav-divfa-search{
     position: absolute;
+    opacity: 0;
+    transition-duration: 1s;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 100;
+}
+.HeaderNav-div--active{
+    opacity: 1;
 }
 .HeaderNav-divfa-search__input{
     border: none;
