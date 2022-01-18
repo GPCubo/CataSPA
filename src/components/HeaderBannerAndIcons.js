@@ -45,6 +45,7 @@ export const HeaderBannerAndIcons = () => {
         <>
         {toggleNav && <HeaderNav typeRender={toggleNav} handleTakeOffNav={handleTakeOffNav} data={data}/>}
         <img src='https://res.cloudinary.com/dxoxuwvdn/image/upload/v1642182040/mclajpg_zg4svi.jpg' alt='logo' className='HeaderBannerAndIcons-imgBanner'/>
+        <p>Yorvis Picon</p>
         <div className="HeaderBannerAndIcons-divIcons">
           <i className="fas fa-bars HeaderBannerAndIcons-iIcon" onClick={handleNav}><p className='HeaderBannerAndIcons-pMessage'>Home</p></i>
           {

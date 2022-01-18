@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 
 export const MainSearchMapData = ({data}) => {
-    console.log(data)
     return (
         <>
         {

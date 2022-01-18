@@ -12,6 +12,7 @@ export const Search = () => {
     const [data, setData] = useState(false);
     useEffect(() => {
         if(!Params)return
+        setData(false)
         setLoading(true)
         const ParamsArray = Params.value.split(' ').map(el => el.toUpperCase())
         const ref = collection(db,"todos")
@@ -31,7 +32,7 @@ export const Search = () => {
                 setLoading(false)
             }
         )
-        .catch(err =>alert(err))
+        .catch(err =>{alert(err);setLoading(false)})
     }, [Params]);
     return (
         <>
