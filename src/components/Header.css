@@ -6,7 +6,7 @@
 }
 .HeaderBannerAndIcons-imgBanner{
     width: calc(100vw - 40px);
-    padding: 0 20px;
+    min-width: 300px;
     max-width: 500px;
 }
 .HeaderBannerAndIcons-iIcon{
