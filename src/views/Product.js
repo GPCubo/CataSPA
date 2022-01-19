@@ -32,7 +32,7 @@ export const Product = () => {
                         {
                             data.link ?
                             <>
-                                <Link to={data.link} className="product-pDev">Acceder al Producto</Link>
+                                <a href={data.link} target="_blank" className="product-pDev">Acceder al Producto</a>
                             </>
                             :
                             <>
