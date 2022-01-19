@@ -14,7 +14,10 @@ export const LandingPage = () => {
             res =>{
                 let dataFromDb = []
                 res.forEach(doc =>{
-                    dataFromDb.push(doc.data())
+                    let setData = doc.data()
+                    setData._idP = doc.id
+                    setData.fecha = doc.data().fecha.toDate().toLocaleDateString()
+                    dataFromDb.push(setData)
                 })
                 if(dataFromDb.length === 0)throw new Error("Hubo un error desconocido. Intente nuevamente")
                 setLoading(false)
